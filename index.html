@@ -3,8 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <title>Lukács Péter.</title>
   </head>
-  <body></body>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lukács Péter</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" id="#about">Rólam</a></li>
+          <li><a href="#experience" id="#experience">Tapasztalat</a></li>
+          <li><a href="#projects" id="#projects">Projektek</a></li>
+          <li><a href="#contact" id="#contact">Elérhetőség</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lukács Péter</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()"></a>Rólam</li>
+          <li><a href="#experience" onclick="toggleMenu()"></a>Tapasztalat</li>
+          <li><a href="#projects" onclick="toggleMenu()"></a>Projektek</li>
+          <li><a href="#contact" onclick="toggleMenu()"></a>Elérhetőség</li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Üdv, itt</p>
+        <h1 class="title">Lukács Péter</h1>
+        <!-- <p class="section__text__p2">vagyok</p> -->
+        <p class="section__text__p3">Frontend Fejlesztő</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Önéletrajz - Lukács Péter.pdf')"
+          >
+            CV Megtekintése
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Elérhetőség
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Profilom"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub Profilom"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Tudj meg többet</p>
+      <h1 class="title">Rólam</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profilkép" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="tapasztalat ikon"
+                class="icon"
+              />
+              <h3>Tapasztalat</h3>
+              <p>
+                1+ év <br />
+                Frontend fejlesztés
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="iskola ikon"
+                class="icon"
+              />
+              <h3>Tanulmányok</h3>
+              <p>
+                AMK Óbudai Egyetem oklevél<br />
+                Udemy Html Css Jonas Schmidth
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              doloribus molestiae culpa modi a repellendus inventore quos illum
+              nesciunt? Perspiciatis eaque a animi ad reiciendis eligendi autem
+              quod, officia error? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ex doloribus molestiae culpa modi a repellendus
+              inventore quos illum nesciunt? Perspiciatis eaque a animi ad
+              reiciendis eligendi autem quod, officia error?
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="nyíl lefelé"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
